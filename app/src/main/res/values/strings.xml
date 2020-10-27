@@ -17,4 +17,7 @@
     <string name="ReBang">热榜</string>
     <string name="EditTextHint1">请输入值</string>
     <string name="hintJ20">歼-20知识图谱</string>
+    <string name="zonghe">综合</string>
+    <string name="zhibo">直播</string>
+    <string name="lanqiu">篮球</string>
 </resources>
