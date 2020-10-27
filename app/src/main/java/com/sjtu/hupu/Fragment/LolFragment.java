@@ -36,6 +36,6 @@ public class LolFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         mViewModel = new ViewModelProvider(this).get(LolViewModel.class);
-        binding.textView3.setText("SN总冠军");
+        binding.textView3.setText("RNG总冠军");
     }
 }
