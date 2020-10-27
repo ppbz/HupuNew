@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Hupu</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="recommend">推荐</string>
+    <string name="match">赛事</string>
+    <string name="community">社区</string>
+    <string name="channel">频道</string>
+    <string name="more">更多</string>
+    <string name="NBA">NBA</string>
+    <string name="lurenwang">路人王</string>
+    <string name="lol">英雄联盟</string>
+    <string name="CBA">CBA</string>
+    <string name="F1">F1方程式</string>
+    <string name="GuanZhu">关注</string>
+    <string name="GuangChang">广场</string>
+    <string name="ReBang">热榜</string>
+    <string name="EditTextHint1">请输入值</string>
+    <string name="hintJ20">歼-20知识图谱</string>
+</resources>

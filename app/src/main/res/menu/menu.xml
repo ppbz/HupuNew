@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/recommendFragment"
+        android:icon="@drawable/ic_baseline_looks_one_24"
+        android:title="@string/recommend" />
+    <item
+        android:id="@+id/matchFragment"
+        android:icon="@drawable/ic_baseline_looks_two_24"
+        android:title="@string/match" />
+    <item
+        android:id="@+id/communityFragment"
+        android:icon="@drawable/ic_baseline_looks_3_24"
+        android:title="@string/community" />
+    <item
+        android:id="@+id/channelFragment"
+        android:icon="@drawable/ic_baseline_looks_4_24"
+        android:title="@string/channel" />
+    <item
+        android:id="@+id/moreFragment"
+        android:icon="@drawable/ic_baseline_looks_5_24"
+        android:title="@string/more" />
+</menu>

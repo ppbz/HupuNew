@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EditTextWithClear">
+        <attr name="clearIcon" format="reference"/>
+        <attr name="searchIcon" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="EditTextWithLove">
+        <attr name="leftLoveIcon" format="reference"/>
+        <attr name="rightLoveIcon" format="reference"/>
+        <attr name="topLoveIcon" format="reference"/>
+        <attr name="bottomLoveIcon" format="reference"/>
+    </declare-styleable>
+</resources>

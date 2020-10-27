@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.LolFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lol"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.942" />
+
+        <com.sjtu.hupu.Widgets.EditTextWithClear
+            android:id="@+id/editTextTextPersonName5"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:layout_height="30dp"
+            android:layout_marginTop="68dp"
+            android:background="@drawable/edit_background"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:clearIcon="@drawable/ic_baseline_clear_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:searchIcon="?android:attr/actionModeWebSearchDrawable" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
