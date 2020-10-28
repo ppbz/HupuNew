@@ -25,29 +25,41 @@
         <com.sjtu.hupu.Widgets.EditTextWithClear
             android:id="@+id/editTextTextPersonName5"
             android:layout_width="wrap_content"
-            android:singleLine="true"
-            android:imeOptions="actionSearch"
             android:layout_height="30dp"
             android:layout_marginTop="68dp"
             android:background="@drawable/edit_background"
             android:ems="10"
+            android:imeOptions="actionSearch"
             android:inputType="textPersonName"
+            android:singleLine="true"
             app:clearIcon="@drawable/ic_baseline_clear_24"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:searchIcon="?android:attr/actionModeWebSearchDrawable" />
 
-        <Button
-            android:id="@+id/button"
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/lol"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.3" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.7" />
+
+        <com.sjtu.hupu.View.MyRelationshipView
+            android:id="@+id/myRelationshipView"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.499" />
+            app:layout_constraintTop_toTopOf="@+id/guideline9" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

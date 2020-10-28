@@ -1,5 +1,6 @@
 package com.sjtu.hupu.Fragment;
 
+import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelProviders;
 
 import android.os.Bundle;
@@ -13,10 +14,17 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.sjtu.hupu.R;
+import com.sjtu.hupu.View.RelationshipView;
+import com.sjtu.hupu.bean.DataBean;
+import com.sjtu.hupu.databinding.CbaFragmentBinding;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class CBAFragment extends Fragment {
 
     private CBAViewModel mViewModel;
+    private CbaFragmentBinding binding;
 
     public static CBAFragment newInstance() {
         return new CBAFragment();
@@ -25,14 +33,36 @@ public class CBAFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.cba_fragment, container, false);
+        binding = CbaFragmentBinding.inflate(getLayoutInflater());
+        return binding.getRoot();
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = ViewModelProviders.of(this).get(CBAViewModel.class);
-        // TODO: Use the ViewModel
     }
 
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        mViewModel = new ViewModelProvider(this).get(CBAViewModel.class);
+        List<DataBean> list = new ArrayList<>();
+
+        for (int i=0;i<3;i++){
+            list.add(new DataBean());
+        }
+
+        binding.relationshipView.setStories(list,new DataBean());
+        binding.relationshipView.setOnClickStoryListener(new RelationshipView.OnClickStoryListener() {
+            @Override
+            public void onClickStory(DataBean story) {
+                List<DataBean> list = new ArrayList<>();
+
+                for (int i=0;i<5;i++){
+                    list.add(new DataBean());
+                }
+                binding.relationshipView.setStories(list,story);
+            }
+        });
+    }
 }
