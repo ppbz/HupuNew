@@ -2,6 +2,7 @@ package com.sjtu.hupu.View;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.view.MotionEvent;
 import android.view.View;
 
 import androidx.annotation.Nullable;
@@ -17,5 +18,11 @@ public class MyCircleView extends View {
 
     public MyCircleView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        
+        return super.onTouchEvent(event);
     }
 }
