@@ -4,11 +4,13 @@ import android.content.Context;
 import android.graphics.Color;
 import android.util.AttributeSet;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.sjtu.hupu.R;
+import com.sjtu.hupu.View.MyTextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -168,7 +170,9 @@ public class CustomerFlowLayout extends ViewGroup {
             this.removeAllViews();
             mTags.addAll(tags);
             for(int i = 0; i < mTags.size(); i++){
-                TextView tv = new TextView(getContext());
+                MyTextView tv = new MyTextView(getContext());
+                tv.setGravity(Gravity.CENTER);
+                tv.setTextSize(10f);
                 MarginLayoutParams lp = new MarginLayoutParams(MarginLayoutParams.WRAP_CONTENT, MarginLayoutParams.WRAP_CONTENT);
                 lp.setMargins(15, 15, 15, 15);
 //                lp.width = MarginLayoutParams.WRAP_CONTENT;
