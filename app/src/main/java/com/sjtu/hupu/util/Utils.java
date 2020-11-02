@@ -15,4 +15,6 @@ public class Utils {
         //但其实跟value里的内容无关，所以应该要一个更通用的，Resources.getSystem()只能拿到与系统相关的上下文信息
         return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,value, Resources.getSystem().getDisplayMetrics());
     }
+
+
 }

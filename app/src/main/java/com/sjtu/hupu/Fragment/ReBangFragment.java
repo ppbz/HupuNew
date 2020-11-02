@@ -59,10 +59,11 @@ public class ReBangFragment extends Fragment {
                 TextView tv = (TextView) v;
                 //Toast.makeText(getContext(), tv.getText().toString(), Toast.LENGTH_SHORT).show();
                 if(tv.getText().toString().equals("阳哥你好！")){
+                    binding.customerFlowLayout.setFlag(false);
                     Log.e("111","1111");
                     tags.add("阳哥牛逼！");
-                    binding.customerFlowLayout.removeViewAt(4);
-                    //binding.customerFlowLayout.setTags(tags);
+                    //binding.customerFlowLayout.removeViewAt(4);
+                    binding.customerFlowLayout.setTags(tags);
                 }
             }
         });
